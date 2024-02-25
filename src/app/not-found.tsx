@@ -8,7 +8,7 @@ export default function NotFound() {
     const router = useRouter();
 
     return (
-        <main className={s.main}>
+        <main className={s.mainError}>
             <h2 className={s.title}>
                 <u>404</u> Not Found
             </h2>

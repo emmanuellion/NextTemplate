@@ -1,0 +1,61 @@
+.mainError
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 100%
+
+  &>*
+    margin: 20px
+
+.titleError
+  font-size: 404%
+
+.messageError
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .contentError
+    font-size: 250%
+
+  &>code
+    background-color: rgb(45, 45, 45)
+    padding: 5px 10px
+    border-radius: 5px
+    font-size: 100%
+    margin: 10px
+    transform: translateY(5px)
+
+.buttonError
+  background: transparent
+  border: 1px solid rgba(255, 255, 255, 0.18)
+  padding: 10px 20px
+  border-radius: 5px
+  font-size: 150%
+  position: relative
+
+  &:hover
+    cursor: pointer
+
+    &::before, &::after
+      width: 100%
+
+  &::before, &::after
+    content: ''
+    position: absolute
+    width: 0
+    height: 2px
+    background-color: #fff
+    transition: width .35s ease-in-out
+
+  &::before
+    bottom: 0
+    left: 0
+    transform: translateY(10px)
+
+  &::after
+    top: 0
+    right: 0
+    transform: translateY(-10px)
+

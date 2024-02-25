@@ -9,15 +9,15 @@ export default function NotFound() {
 
     return (
         <main className={s.mainError}>
-            <h2 className={s.title}>
+            <h2 className={s.titleError}>
                 <u>404</u> Not Found
             </h2>
-            <p className={s.content}>You lost yourself</p>
-            <button className={s.back} onClick={() => router.back()}>
+            <p className={s.contentError}>You lost yourself</p>
+            <button className={s.buttonError} onClick={() => router.back()}>
                 Click here to go back
             </button>
             or
-            <Link href={'/'} className={s.back}>
+            <Link href={'/'} className={s.buttonError}>
                 Go home
             </Link>
         </main>
